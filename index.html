@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- xác định dạng văn bản, giúp trang web hiện một cách chính xác, xuất hiện 1 lần duy nhất ở đầu html -->
+<html lang="en"> 
+    <!-- Phải luôn bao gồm thuộc tính lang bên trong thẻ <html>, để khai báo ngôn ngữ của trang Web. -->
+    <!-- <head> là vùng chứa siêu dữ liệu (dữ liệu về dữ liệu) và được đặt giữa thẻ <html> và thẻ <body>. -->
+<head>
+    <!-- <meta> thường được sử dụng để chỉ định bộ ký tự, mô tả trang, từ khóa, tác giả của tài liệu và cài đặt chế độ xem. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title> xác định tiêu đề của tài liệu. Tiêu đề phải ở dạng văn bản và nó được hiển thị trên thanh tiêu đề của trình duyệt hoặc trong tab của trang.
+         <title> là bắt buộc trong các tài liệu HTML! -->
+    <title>KHA resume</title>
+    <!-- favicon được hiển thị ở bên trái của tiêu đề trang trong tab trình duyệt -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
+    <!-- <link> xác định mối quan hệ giữa tài liệu hiện tại và tài nguyên bên ngoài.
+        <link> thường được sử dụng nhất để liên kết với các biểu định kiểu bên ngoài -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <!-- <header> - Xác định tiêu đề cho một tài liệu hoặc một phần -->
+    <header>        
+        <!-- Một danh sách có thứ tự bắt đầu bằng thẻ <ol>. Mỗi mục danh sách bắt đầu bằng thẻ <li>.
+        Các mục trong danh sách sẽ được đánh dấu bằng số theo mặc định -->
+        <ol>
+            <li></li>
+            <li><a href="">Home</a></li>
+            <!-- Bookmarks được sử dụng để cho phép người đọc chuyển đến các phần cụ thể của trang web.-->
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#act">Activity</a></li>
+            <li><a href="#accom">Accomplishment</a></li>
+            <li><a href="#vol">Volunteer</a></li>
+        </ol>
+    </header>
+    <!-- <div> thường được sử dụng làm vùng chứa cho các phần tử HTML khác.
+        <div> không có thuộc tính bắt buộc, nhưng kiểu, lớp và id là chung.
+        Khi được sử dụng cùng với CSS, <div> có thể được sử dụng để tạo kiểu cho các khối nội dung: -->
+
+            <!-- Thuộc tính class thường được sử dụng để trỏ đến tên lớp trong css hoặc js. 
+            Các phần tử HTML có thể thuộc về nhiều hơn một class.-->
+    <div class="banner row">
+        <div class="col-sm-6">
+            <!-- Thẻ <img> được sử dụng để chefn hình ảnh vào trang wweb. Thuộc tính src chỉ định đường dẫn đến hình ảnh -->
+            <!-- Absolute URL & Relative URL -->
+            <!-- Thuộc tính alt nên được sử dụng cho thẻ <img> là văn bản thay thế cho hình ảnh, nếu hình ảnh vì lý do nào đó không thể hiển thị.  -->
+            <img src="./assets/image/IMG_2731.JPG" alt="Hong Anh">
+            <div class="text-center">
+                <!-- Thuộc tính title xác định một số thông tin bổ sung về một phần tử. -->
+                <!-- HTML Headings xasc định các thẻ từ H1 - H6 -->
+                <h1 title="My name">Khổng Thị Hồng Anh</h1>
+                <h2 title="Roll student number">HE160643</h2>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center align-middle">
+            <!-- thuộc tính style được sử dụng để thêm kiểu vào một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v. -->
+            <h1 style="font-size: 60px;">Hello, Welcome to my website.</h1>        
+        </div>
+    </div>
+
+    <!-- Thuộc tính id được sử dụng để chỉ định một id duy nhất cho một phần tử HTML.
+        Không thể có nhiều hơn một phần tử có cùng một id trong một HTML. -->
+        <!-- <section> - Xác định một phần trong tài liệu -->
+    <section class="experience" id="exp">
+        <h2 class=""><strong>Experience</strong></h2>
+        
+        <div class="experience-item">
+            <p class="year">2021</p>
+            <p class="title"><b>Invisible Blade – Group Project <br> Web Coder/Co-founder</b></p>
+            <ul>
+                <li>Collaborate with 6 other students to create, promote and communicate a website to popularise Body Shaming problem in daily life</li>
+                <li>Code a website containing information about Body Shaming and confessions or short blogs.</li>
+                <li>Instruct 3 other teammates how to create a simple website</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <p class="year">2022</p>
+            <p class="title"><b>JS Club <br> Back-end Coder</b></p>
+            <ul>
+                <li>Research and study Django </li>
+                <li>Code Login and Signup part for a web</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <p class="year">2020 - Present</p>
+            <p class="title"><b>FPT University <br> Logic Math Tutor</b></p>
+            <ul>
+                <li>Teach Logic Maths for about 100 students who are at high schools and want to get scholarship of FPT University</li>
+                <li>Search and create 5 Logic Mock Tests and 20 practice tests about Logic Maths for students</li>
+            </ul>
+        </div>        
+    </section>
+
+    <section class="activity" id="act">
+        <h2 class=""><strong>Activity</strong></h2>
+        <div class="activity-item">
+            <!-- <p> Xác định một đoạn văn -->
+            <p class="year">2021</p>
+            <!-- <br> xác định ngắt dòng. -->
+            <!-- <b> - Chữ in đậm -->
+            <p class="title"><b>SheCodes Hackathon <br> Candidate</b></p>
+            <!-- Một danh sách không có thứ tự bắt đầu bằng thẻ <ul>. Mỗi mục danh sách bắt đầu bằng thẻ <li>.
+            Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng bằng dấu chấm tròn theo mặc định: -->
+            <ul>
+                <li>Research and find solutions for DataBase</li>
+                <li>Cooperate with other candidates to create a team and code a completely product for one of problems which this program gives</li>
+            </ul>
+        </div>
+
+        <div class="activity-item">
+            <!-- <p> Xác định một đoạn văn -->
+            <p class="year">2022</p>
+            <!-- <br> xác định ngắt dòng. -->
+            <!-- <b> - Chữ in đậm -->
+            <p class="title"><b>Shopee Code League <br> Candidate</b></p>
+            <!-- Một danh sách không có thứ tự bắt đầu bằng thẻ <ul>. Mỗi mục danh sách bắt đầu bằng thẻ <li>.
+            Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng bằng dấu chấm tròn theo mặc định: -->
+            <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Cooperate with my teammates to act in order to find solutions for programs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="accomplishment" id="accom">
+        <h2 class=""><strong>Accomplishment</strong></h2>
+        <table>           
+             <!--Mỗi hàng trong bảng bắt đầu bằng <tr> và kết thúc bằng thẻ </tr>.
+                tr là viết tắt của hàng trong bảng.  -->
+            <tr>
+                <!-- <th> là tiêu đề các cột trong bảng -->
+              <th>Year</th>
+              <th>Accomplishment</th>
+            </tr>
+            <!-- Mỗi ô trong bảng được xác định bởi thẻ <td> và </td>.
+                td là viết tắt của dữ liệu bảng.
+                Mọi thứ giữa <td> và </td> đều là nội dung của ô trong bảng. -->
+            <tr>
+              <td>2020-Present</td>
+              <td><b>Full Schoolarship of FPT University</b></td>              
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td><b>50% Award Prize for Software Engineering of International Talent Schoolarship VTC Academy Plus</b></td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td><b>First Prize Algorithm Arerna 3.0</b></td>
+            </tr>
+        </table>        
+    </section>
+
+    <section class="volunteer" id="vol">
+        <h2 class=""><strong>Volunteer</strong></h2>
+        <div class="vol-item">
+            <img src="" alt="">
+            <p class="year">2020 - Volunteer</p>
+            <p class="title"><b>VnExpress Marathon Hanoi Midnight</b></p>            
+            <ul>
+                <li>About Health and donating for children</li>
+            </ul>
+        </div>
+        <div class="vol-item">
+            <img src="" alt="">
+            <p class="year">2021 - Trainee</p>
+            <p class="title"><b>Wars' Aftermath Initiative & UN Youth Leaders for Disarmament</b></p>            
+            <ul>
+                <li>Disarmament and Peace Problem</li>
+                <li>Teamwork and research. My team won.</li>
+            </ul>
+        </div>        
+    </section>
+
+    <section class="contact">
+        <h2 class=""><strong>Contact</strong></h2>
+        <div class="contact-detail ">
+            <!-- <form> được sử dụng để tạo một biểu mẫu HTML cho đầu vào của người dùng:
+                <form> là vùng chứa cho các loại phần tử đầu vào khác nhau, chẳng hạn như: trường văn bản, hộp kiểm, nút radio, nút gửi,... -->
+            <form action="">
+                <div class="row-padding">
+                    <div class="">
+                        <!-- <input> là phần tử biểu mẫu được sử dụng nhiều nhất.
+                        <input> có thể được hiển thị theo nhiều cách, tùy thuộc vào thuộc tính type. -->
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="">
+                    <input type="text" placeholder="Message" required>
+                </div>
+                <!-- Thẻ <button> xác định một nút có thể nhấp. -->
+                <button class="send-btn grey-hover">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="footer">
+        <!-- <footer> - Xác định chân trang cho một tài liệu hoặc một phần -->
+        <footer class="text-center">
+            <div class="footer-social-icons">
+                <!-- Thẻ <a> xác định một siêu liên kết. Thuộc tính href chỉ định URL của trang mà liên kết chuyển đến-->
+                <!-- _self - Mặc định. Mở tài liệu trong cùng một cửa sổ / tab khi nó được nhấp vào
+                    _blank - Mở tài liệu trong cửa sổ hoặc tab mới
+                    _parent - Mở tài liệu trong khung chính
+                    _top - Mở tài liệu trong toàn bộ phần nội dung của cửa sổ -->
+                <a href="" target="_blank"><i class="ti-facebook"></i></a>
+                <a href="" target="_self"><i class="ti-instagram"></i></a>
+                <a href="" target="_parent"><i class="ti-github"></i></a>
+                <a href="" target="_top"><i class="ti-youtube"></i></a>
+                <!-- Sử dụng thuộc tính mailto: bên trong thuộc tính href để tạo liên kết mở chương trình email của người dùng (để cho phép họ gửi email mới)-->
+                <a href="mailto:anhnapu2002@gmail.com"><i class="ti-email"></i></a>
+                
+            </div>
+            <p>Powered by <a href="https://www.facebook.com/anh.ice.1312/" target="_blank">HAnh</a> </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
